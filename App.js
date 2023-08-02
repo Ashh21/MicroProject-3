@@ -354,7 +354,7 @@ const vegetables = foodChart.filter(item => item.category === 'Vegetable').map(v
 
 const fruits = foodChart.filter(item => item.category === 'Fruit').map(fruit => {
     const listItem = document.createElement("li");
-    listItem.innerText = fruit.foodname;
+    listItem.innerText = fruit.foodname ;
     fruitsList.appendChild(listItem)
 })
 
@@ -366,32 +366,46 @@ const protein = foodChart.filter(item => item.category === 'Protein').map(protei
 
 const nuts = foodChart.filter(item => item.category === 'Nuts').map((nuts) => {
     const listItem = document.createElement("li");
-    listItem.innerText = nuts.foodname;
+    listItem.innerText = nuts.foodname ;
     nutsList.appendChild(listItem)
 })
 
 const grains = foodChart.filter(item => item.category === 'Grain').map((grains) => {
     const listItem = document.createElement("li");
-    listItem.innerText = grains.foodname;
+    listItem.innerText = grains.foodname ;
     grainsList.appendChild(listItem)
 })
 
 const dairy = foodChart.filter(item => item.category === 'Dairy').map((dairy) => {
     const listItem = document.createElement("li");
-    listItem.innerText = dairy.foodname;
+    listItem.innerText = dairy.foodname ;
     dairyList.appendChild(listItem)
 })
 
 const calAbove = foodChart.filter(item => item.calorie > 100).map((item) => {
     const listItem = document.createElement("li");
     listItem.innerText = ` ${item.foodname}
-     calories : ${item.calorie}`
+     calories : ${item.calorie}` ;
     caloriesAbove.appendChild(listItem)
 })
 
 const calBelow = foodChart.filter(item => item.calorie < 100).map((item) => {
     const listItem = document.createElement("li");
     listItem.innerText =  ` ${item.foodname}
-    calories : ${item.calorie}`
+    calories : ${item.calorie}` ;
     caloriesBelow.appendChild(listItem)
+})
+
+const proteinHighTwoLow = foodChart.sort((a,b) => b.protiens - a.protiens).map(protein => {
+    const listItem = document.createElement("li");
+    listItem.innerText =` ${protein.foodname}
+    Protien : ${protein.protiens}` ;
+    h2lProtien.appendChild(listItem);
+})
+
+const carbsLowToHigh = foodChart.sort((a,b) => a.cab - b.cab).map(cab => {
+    const listItem = document.createElement("li");
+    listItem.innerText = ` ${cab.foodname}
+     carbs : ${cab.cab}` ;
+    l2hCarbs.appendChild(listItem)
 })
