@@ -24,6 +24,12 @@ body{
     font-style: italic;
 }
 
+.header > h1 {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color:#E3AFBC ;
+}
+
 .container{
     display: flex;
     justify-content: space-evenly;
@@ -43,10 +49,6 @@ div{
     height: fit-content;
 }
 
-.wrap{
-       
-}
-
 div > ul {
     list-style: none;
    
@@ -56,8 +58,8 @@ div > ul {
     background-color: #E3AFBC;
 }
 
-.clr:hover{
-    border: 2px solid;
+.hover:hover{
+    border: 2px solid rgba(0, 0, 0, 0.658);
 }
 
  h1 {
