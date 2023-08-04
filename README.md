@@ -9,5 +9,4 @@ live link : https://grand-sundae-10877b.netlify.app
 
 
 
-
-![Screenshot (37)](https://github.com/Ashh21/MicroProject-3/assets/106957781/0b63616a-2d73-472f-bf5a-7a52bd6c01c6)
+![Screenshot (38)](https://github.com/Ashh21/MicroProject-3/assets/106957781/3dd84ff6-b0f3-449b-8249-e39c6885d848)
